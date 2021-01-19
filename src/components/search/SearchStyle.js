@@ -4,6 +4,7 @@ import {  makeStyles  } from '@material-ui/core'
             root:{
             paddingTop:70
             }, 
+            
             root2: {
                 display: 'flex',
                 justifyContent: 'center',

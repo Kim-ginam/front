@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Recipemodalscroll from 'components/recip/recipemodalscroll.js'
 import SearchIcon from '@material-ui/icons/Search';
 import RecipList from '../components/recip/reciplist.js'
-import logo from './냉장고스몰.png'; // with import
+import logo from './main_logo.png'; // with import
 import { withRouter  } from 'react-router-dom';
 import {getRecip,getRecip2} from 'ajax/ajax'
 import {setRecip, delUserInfo } from 'store/actions/index' 

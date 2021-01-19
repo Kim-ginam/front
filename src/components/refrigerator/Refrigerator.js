@@ -1,35 +1,17 @@
 import React , {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
+import styles from 'components/search/SearchStyle';
 import Paper from '@material-ui/core/Paper';
 import { IconButton ,InputBase ,Grid,Chip,Box } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import { connect } from 'react-redux'
 import {addJaryo,delJaryo} from 'store/actions/index' 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(0.5),
-    },
-  },
-  table: {
-    padding: 'checkbox'
-  },
-  iconButton :{
-    margin:3
-  },
-  TableContainer:{
-    margin:1
-  }
-}));
+
 
 
 function SimpleTable(props) {
-  const classes = useStyles();
+  const classes = styles();
 
   const [jaryoinput, setjaryoinput] =  useState('');
   function handleClick(e) {
@@ -57,14 +39,14 @@ function SimpleTable(props) {
   return (
     <div>
     <Paper> 
-      <Grid container justify="center"  alignItems="center" >
-        <Grid item  xs = {10} sm ={10} md ={10}>
+      <Grid container justify="center"  alignItems="center">
+        <Grid item  xs = {10} sm ={10} md ={10} >
           <InputBase 
             value={jaryoinput}
             onChange={handleChange}
             fullWidth = {true}
             className={classes.input}
-            placeholder="  냉장고 재료를 추가하세요."
+            placeholder="냉장고 재료를 추가하세요."
           />
         </Grid>
         <Grid item  xs = {2} sm ={2} md ={2}>

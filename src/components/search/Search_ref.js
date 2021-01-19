@@ -6,6 +6,7 @@ import styles from 'components/search/SearchStyle'
 import { connect } from 'react-redux'
 import { withRouter  } from 'react-router-dom';
 import {addJaryo,delJaryo} from 'store/actions/index' 
+import './Search_ref.css'
 
 
 function  Search(props) {
@@ -38,11 +39,13 @@ function  Search(props) {
       <div>
         <Box>
         
-        <Box padding={1}>
+        <div>
+        <Box className="refrigerator">
         <Grid item  xs = {12} sm ={12} md ={12}>
          <Refrigerator ></Refrigerator>
         </Grid>
        </Box>
+       </div>
         <Paper>
          <Grid container justify="center"  alignItems="center">
             <Grid item  xs = {10} sm ={10} md ={10}>

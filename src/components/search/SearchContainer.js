@@ -10,7 +10,7 @@ import {setRecip} from 'store/actions/index'
 import { setSerchInput } from '../../store/actions';
 import RecipList from 'components/recip/reciplist.js'
 import CircularProgress from '@material-ui/core/CircularProgress';
-import logo from './냉장고스몰.png'; // with import
+import logo from './main_logo.png'; // with import
 import {delUserInfo } from 'store/actions/index' 
 
 function  Search(props) {
